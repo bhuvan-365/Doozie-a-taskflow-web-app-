@@ -1,4 +1,5 @@
 import Navbar from './Components/Navbar'
+import AddList from './Components/AddList'
 import './App.css'
 
 
@@ -14,15 +15,25 @@ function App() {
           <Navbar />
           <div className="head">
             <div className="heading">Your Things</div>
-            <div className="personal">24</div>
-            <div className="business">36</div>
+            <div className="count">
+              <div className="personal">
+                <div className="num">24</div>
+                <div className="name">Personal</div>
+                </div>
+              <div className="business">
+                <div className="num">36</div>
+                <div className="name">Business</div>
+                </div>
+            </div>
+
           </div>
-          <div className="headBottom">Date</div>
+          <div className="headBottom">Apr 1,
+            2005</div>
         </div>
         <div className="bottomContainer">
-          bottomContainer
+         
+ <AddList />
         </div>
-
 
 
       </div>

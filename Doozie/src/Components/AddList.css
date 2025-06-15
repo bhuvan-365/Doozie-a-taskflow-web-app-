@@ -1,0 +1,13 @@
+.bottom{
+    width: auto;
+    height: auto;
+    background-color: rgb(90, 80, 223);
+}
+h1{
+    text-align: center;
+    padding:3vh;
+}
+.addListLogo{
+       text-align: center;
+       padding-bottom: 2vh;
+}

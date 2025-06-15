@@ -1,0 +1,12 @@
+.navBar ul{
+    font-weight: 200;
+    font-size: 0.9rem;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+gap: 5vw;
+  color: aliceblue;
+
+}
