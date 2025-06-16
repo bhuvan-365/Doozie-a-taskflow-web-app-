@@ -1,13 +1,87 @@
-.bottom{
-    width: auto;
-    height: auto;
+.bottom {
+    height: 64vh;
+    width: 70vw;
     background-color: rgb(90, 80, 223);
 }
-h1{
+
+h1 {
+    color: white;
     text-align: center;
-    padding:3vh;
+    padding: 3vh;
 }
-.addListLogo{
-       text-align: center;
-       padding-bottom: 2vh;
+
+.addListLogo {
+    text-align: center;
+    padding-bottom: 2vh;
+    filter: invert();
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskName1{
+    font-size: 0.9rem;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50vw;
+    border-radius: 18px;
+    padding: 10px 15px;
+    margin: 5px auto;
+}
+.taskName2{
+    font-size: 0.9rem;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50vw;
+    border-radius: 18px;
+    padding: 10px 15px;
+    margin: 3vh auto;
+}
+
+input::placeholder {
+    color: #dbdbdb;
+}
+
+select {
+    color: white;
+    width: 18vw;
+    margin: auto 12px;
+    padding: 2px 6px;
+    background: rgb(154, 140, 167);
+    border-radius: 12px;
+}
+
+select option {
+    color: white;
+    background: rgb(154, 140, 167);
+    border-radius: 12px;
+
+}
+
+span {
+    margin: 6vh auto;
+}
+
+span label {
+    color: white;
+}
+
+.submit {
+    color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 1rem;
+    background: transparent;
+    padding: 4px 9px;
+}
+
+.submit:hover {
+    color: yellow;
+    background-color: rgb(154, 140, 167) ;
 }

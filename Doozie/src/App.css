@@ -26,7 +26,7 @@ body {
 
 .topContainer {
     position: relative;
-    padding: 9px 22px 15px 15px;
+    padding: 0px 22px 15px 15px;
     color: rgb(5, 36, 36);
     /* background-color: rgb(120, 139, 133); */
     height: 25vh;
@@ -61,12 +61,13 @@ body {
     align-items: center;
     gap: 20px;
     margin: 10px 15px;
-    margin-top: 35px;
+    margin-top: 13px;
 }
 
 .heading {
     font-size: 2rem;
     color: aliceblue;
+        line-height: 28px;
 }
 
 .count {
