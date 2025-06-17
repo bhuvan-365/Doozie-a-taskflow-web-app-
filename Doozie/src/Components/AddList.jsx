@@ -17,7 +17,7 @@ const AddList = () => {
           <input className='taskName1' type="text" placeholder='Enter your task' required />
           <input className='taskName2' type="text" placeholder='Note?'/>
           <span>
-          <label for="target">Select target : </label>
+          <label htmlFor="target">Select target : </label>
           <select name="Time" id="">
             <option value="day">Day</option>
             <option value="week">Week</option>
