@@ -75,9 +75,14 @@ background: transparent;
 border:none;
 cursor: pointer;
 }
-.taskDone{
-    text-decoration: line-through;
+.done{
+background-color: transparent;
+border:none;
+cursor: pointer;
 }
-p{
-  text-align: center;
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

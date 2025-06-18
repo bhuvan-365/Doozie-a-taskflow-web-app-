@@ -1,7 +1,7 @@
 .bottom {
     height: 64vh;
     width: 70vw;
-    background-color: rgb(90, 80, 223);
+    background-color: rgb(140, 136, 202);
 }
 
 h1 {
@@ -79,6 +79,7 @@ span label {
     font-size: 1rem;
     background: transparent;
     padding: 4px 9px;
+    width: 15vw;
 }
 
 .submit:hover {

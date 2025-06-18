@@ -1,18 +1,20 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+import React, { useState } from 'react';
 import Navbar from './Components/Navbar'
-import AddList from './Components/AddList'
+import Addlist from './Components/AddList'
+
 import History from './Components/History'
 import Home from './Components/Home'
 import './App.css'
 
 function TopContainer() {
-   const today = new Date();
+  const today = new Date();
   const options = { month: 'short', day: 'numeric', year: 'numeric' };
   const formattedDate = today.toLocaleDateString(undefined, options);
 
   return (
     <div className="topContainer">
-          <Navbar />
+      <Navbar />
       <div className="head">
         <div className="heading">Your Things</div>
         <div className="count">
@@ -27,36 +29,55 @@ function TopContainer() {
         </div>
       </div>
       <div className="headBottom">{formattedDate}</div>
-  
+
     </div>
   )
 }
 
-function Layout() {
+function Layout({ todo, setTodo, todos, setTodos ,  completedTodos, setCompletedTodos }) {
   return (
     <div className="container">
       <TopContainer />
       <div className="bottomContainer">
-        <Outlet />
+        <Outlet context={{ todo, setTodo, todos, setTodos ,  completedTodos, setCompletedTodos }} />
       </div>
     </div>
   )
 }
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      { path: '/', element: <Home /> },
-      { path: '/addlist', element: <AddList /> },
-      { path: '/history', element: <History /> },
-    ],
-  },
-])
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <Layout />,
+//     children: [
+//       { path: '/', element: <Home /> },
+//       { path: '/addlist', element: <Addlist /> },
+//       { path: '/history', element: <History /> },
+//     ],
+//   },
+// ])
 
 function App() {
-  return <RouterProvider router={router} />
+
+  const [todo, setTodo] = useState('');
+  const [todos, setTodos] = useState([]);
+  const [completedTodos, setCompletedTodos] = useState([]);
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Layout todo={todo} setTodo={setTodo} todos={todos} setTodos={setTodos} completedTodos={completedTodos} setCompletedTodos={setCompletedTodos}/>,
+      children: [
+        { path: '/', element: <Home todos={todos} setTodos={setTodos} /> },
+        { path: '/addlist', element: <Addlist /> },
+        { path: '/history', element: <History /> },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
+
+  
 }
 
 export default App
