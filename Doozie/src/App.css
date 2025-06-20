@@ -39,7 +39,7 @@ body {
 }
 
 .bottomContainer {
- 
+
     background-color: rgb(147, 175, 81);
     height: 64vh;
     width: 70vw;
@@ -67,7 +67,7 @@ body {
 .heading {
     font-size: 2rem;
     color: aliceblue;
-        line-height: 28px;
+    line-height: 28px;
 }
 
 .count {
@@ -84,4 +84,96 @@ body {
 
 .name {
     font-size: 0.7rem;
+}
+
+@media screen and (max-width: 883px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .topContainer {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .bottomContainer {
+        width: 90vw;
+        height: 60vh;
+    }
+.bottom{
+     width: 90vw;
+        height: 60vh;
+    
+}
+    .home {
+        width: 90vw;
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        border-radius: 0px;
+    }
+    .topContainer {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .bottomContainer {
+        width: 100vw;
+        height: 60vh;
+    }
+.bottom{
+     width: 100vw;
+        height: 60vh;
+    
+}
+    .home {
+        width: 100vw;
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    ul {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        gap: 2vh;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        padding-top: 4vh;
+        /* right: -50vw; */
+        padding-bottom: 2vh;
+        border-radius: 15px;
+        width: 50vw;
+        background: #000000a9;
+        transition: all 0.8s ease-in-out;
+
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+       right: -4px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+}
+
+@media screen and (min-width:380px) {
+    .menu-icon {
+        display: none;
+    }
+
 }
