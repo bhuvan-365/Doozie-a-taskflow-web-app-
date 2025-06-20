@@ -98,11 +98,13 @@ body {
         width: 90vw;
         height: 60vh;
     }
-.bottom{
-     width: 90vw;
+
+    .bottom {
+        width: 90vw;
         height: 60vh;
-    
-}
+
+    }
+
     .home {
         width: 90vw;
         height: 60vh;
@@ -110,10 +112,11 @@ body {
 
 }
 
-@media screen and (max-width: 500px){
-    .container{
+@media screen and (max-width: 500px) {
+    .container {
         border-radius: 0px;
     }
+
     .topContainer {
         width: 100vw;
         height: 40vh;
@@ -123,16 +126,22 @@ body {
         width: 100vw;
         height: 60vh;
     }
-.bottom{
-     width: 100vw;
+
+    .bottom {
+        width: 100vw;
         height: 60vh;
-    
-}
+
+    }
+
     .home {
         width: 100vw;
         height: 60vh;
     }
 
+    .submit {
+        margin-top: 12px;
+        width: 100px
+    }
 }
 
 @media screen and (max-width:380px) {
@@ -161,11 +170,23 @@ body {
     .menu-icon {
         display: block;
         position: absolute;
-       right: -4px;
+        right: -4px;
         top: 10px;
         cursor: pointer;
         z-index: 1000;
     }
+
+}
+
+@media screen and (max-width:287px) {
+    .personal {
+        display: none;
+    }
+
+    .business {
+        display: none;
+    }
+    
 
 }
 
@@ -174,4 +195,14 @@ body {
         display: none;
     }
 
+}
+
+@media screen and (max-height :867px) {
+    .form span {
+        margin: 0px;
+    }
+
+    .submit {
+        margin-top: 5vh;
+    }
 }

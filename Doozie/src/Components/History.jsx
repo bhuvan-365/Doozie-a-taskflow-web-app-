@@ -7,7 +7,11 @@ const History = () => {
   const { todos ,setTodos, completedTodos , setCompletedTodos} = useOutletContext();
   // const { completedTodos = [] } = useOutletContext() || {};
   const handelDel = (id) => {
-    setCompletedTodos(prev => prev.filter(todo => todo.id !== id));
+    // setCompletedTodos(prev => prev.filter(todo => todo.id !== id));
+    const updated = completedTodos.filter(todo => todo.id !== id);
+  setCompletedTodos(updated);
+  localStorage.setItem("completedTodos", JSON.stringify(updated)); // update localStorage
+  
   };
 
 
