@@ -146,6 +146,9 @@ body {
 }
 
 @media screen and (max-width:380px) {
+    *{
+        cursor: none;
+    }
     ul {
 
         display: flex;
@@ -173,7 +176,7 @@ body {
         position: absolute;
         right: -4px;
         top: 10px;
-        cursor: pointer;
+
         z-index: 1000;
     }
 
