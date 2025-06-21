@@ -83,6 +83,10 @@ body {
 .name {
     font-size: 0.7rem;
 }
+.small{
+    font-size: 0.9rem;
+    color: rgb(224, 207, 130);
+}
 
 @media screen and (max-width: 883px) {
  

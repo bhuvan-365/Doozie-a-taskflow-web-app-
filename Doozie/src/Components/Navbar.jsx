@@ -21,13 +21,13 @@ const Navbar = () => {
 
           <div className="menu-icon" onClick={handelham} > {menuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-              <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>) : (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="white" fill="none">
-              <path d="M20 12L10 12" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M20 5L4 5" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 12L10 12" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"></path>
+              <path d="M20 5L4 5" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
               </path>
-              <path d="M20 19L4 19" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M20 19L4 19" stroke="white" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"></path>
             </svg>
 
           )}</div>

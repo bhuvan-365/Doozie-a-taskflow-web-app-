@@ -41,7 +41,8 @@ const Home = () => {
           {todos.length == 0 ? (
             <div className="main">
               <h1>N0 Task Yet</h1>
-              <p>Please, Add task from "<a href="/addlist">Addlist</a>" section</p>
+              <p>Please, Add task from " AddList " section</p>
+              <p className='small'>from navbar or hamburger</p>
 
             </div>
           ) : (todos.map((item) => (
